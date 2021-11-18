@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun sweep( view: View ){
-        val textViewSortition = findViewById<TextView>(R.id.textSortition)
+
         val poolNumber = Random().nextInt(11)
         val textSortition = "Pool number is: $poolNumber"
 
